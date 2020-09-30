@@ -1,0 +1,21 @@
+@import 'libs/normalize';
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+@import 'base/variables';
+@import 'base/fonts';
+@import 'sections/mainscreen';
+@import 'blocks/header';
+@import 'elements/buttons';
+@import 'sections/services';
+@import 'base/titles';
+@import 'sections/gallery';
+@import 'sections/team';
+@import 'sections/promo';
+@import 'sections/testimonials';
+@import 'blocks/footer';
+@import 'elements/modal';
+@import 'base/media';
+@import 'elements/hamburger';

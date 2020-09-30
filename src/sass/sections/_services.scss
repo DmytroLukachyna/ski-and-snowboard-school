@@ -1,0 +1,34 @@
+.services {
+    background: rgb(246, 246, 246);
+    padding: 90px 0 160px;
+    &__text {
+        margin: 20px auto 0;
+        max-width: 930px;
+        text-align: center;
+    }
+    &__item-wrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 70px;
+    }
+    &__item {
+        max-width: 230px;
+        text-align: center;
+    }
+    &__img {
+        height: 186px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__subtitle {
+        margin-top: 30px;
+    }
+    &__title,
+    &__category {
+        margin-top: 20px;
+    }
+}
