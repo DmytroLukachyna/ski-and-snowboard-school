@@ -1,0 +1,26 @@
+.gallery {
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    &__link {
+        width: 100%;
+        height: 100%;
+    }
+    &__item {
+        transition: all .25s ease-in-out;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        &:not(:hover) {
+            opacity: .75;
+        }
+    }
+    .item_13 {
+        grid-row: 1 / 3;
+        grid-column: 3;
+    }
+    .item_24 {
+        grid-row: 2 / 4;
+        grid-column: 1;
+    }
+}

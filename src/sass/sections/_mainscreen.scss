@@ -1,0 +1,66 @@
+.mainscreen {
+    min-height: 110vh;
+    width: 100%;
+    background: radial-gradient(circle, rgba(27, 115, 158, 0.90) 0%, rgba(50, 87, 133, 0.95) 52%);
+    position: relative;
+    &__subtitle {
+        margin-top: 60px;
+        text-align: center;
+        font-family: Catamaran;
+        font-size: 30px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: rgb(255, 255, 255);
+    }
+    &__title {
+        text-align: center;
+        font-family: Catamaran;
+        font-size: 250px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: -0.05em;
+        color: rgba(255, 255, 255, .4);
+    }
+    &__text {
+        margin-top: 100px;
+        position: relative;
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+        max-width: 455px;
+        z-index: 1;
+    }
+    &__mountains {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    &__boarder {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        img {
+            width: 100%;
+        }
+    }
+    &__snow,
+    &__snow-hover {
+        position: absolute;
+        bottom: -3px;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    &__snow-hover {
+        background-image: linear-gradient(to top, rgb(246, 246, 246) 0%, rgba(255, 255, 255, .95) 50%, rgba(255, 255, 255, 0) 100%);
+        width: 100%;
+        height: 112px;
+    }
+}
