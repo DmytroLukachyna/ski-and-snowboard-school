@@ -20,7 +20,7 @@
             object-fit: cover;
             border-radius: 50%;
         }
-        &:after,
+        /*         &:after,
         &:before {
             position: absolute;
             bottom: -10px;
@@ -32,11 +32,13 @@
         &:before {
             content: '\f100';
             left: -80px;
+            transform: rotate(-25deg);
         }
         &:after {
             content: '\f101';
             right: -80px;
-        }
+            transform: rotate(25deg);
+        } */
     }
     &__author {
         text-align: center;

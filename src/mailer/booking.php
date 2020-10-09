@@ -14,7 +14,7 @@ $mail->isSMTP();
 $mail->Host = 'smtp.ukr.net';
 $mail->SMTPAuth = true;
 $mail->Username = 'lolkekcheburek1905@ukr.net';
-$mail->Password = '9TSMdfSL76GWwyyl';
+$mail->Password = 'passdeletedandrevoked';
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
 $mail->setFrom('lolkekcheburek1905@ukr.net', 'Sparcle Cleaning');
