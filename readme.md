@@ -1,1 +1,1 @@
-https://dmytrolukachyna.github.io/ski/
+https://dmytrolukachyna.github.io/projects/ski/
