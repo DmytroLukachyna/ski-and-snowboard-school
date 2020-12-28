@@ -9,7 +9,7 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "autoprefixer": "^9.8.6",
+        "autoprefixer": "^10.1.0",
         "browser-sync": "^2.26.13",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^7.0.1",
