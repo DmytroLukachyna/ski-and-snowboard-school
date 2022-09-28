@@ -13,12 +13,12 @@ $mail->CharSet = 'utf-8';
 $mail->isSMTP();
 $mail->Host = 'smtp.ukr.net';
 $mail->SMTPAuth = true;
-$mail->Username = 'lolkekcheburek1905@ukr.net';
+$mail->Username = 'email@addre.ss';
 $mail->Password = 'passdeletedandrevoked';
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
-$mail->setFrom('lolkekcheburek1905@ukr.net', 'Sparcle Cleaning');
-$mail->addAddress('guidecco@ukr.net');
+$mail->setFrom('email@addre.ss', 'Sparcle Cleaning');
+$mail->addAddress('email@addre.ss');
 $mail->isHTML(true);
 
 $mail->Subject = 'Письмо c Ski & Snowboard School';

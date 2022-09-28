@@ -1,105 +1,105 @@
 .order-form {
-    text-align: center;
-    max-width: 360px;
-    border-radius: 10px;
-    display: none;
-    &__title {
+  text-align: center;
+  max-width: 360px;
+  border-radius: 10px;
+  display: none;
+  &__title {
+    margin: 10px 0;
+  }
+  input {
+    width: 100%;
+    margin: 10px 0;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  }
+  textarea {
+    width: 100%;
+    height: 95px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    resize: none;
+  }
+  ul {
+    margin: 10px 0;
+    padding: 0;
+    li {
+      list-style-type: none;
+    }
+    .customer_consent {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      #customer_consent {
+        width: 20px;
+        height: 20px;
         margin: 10px 0;
+      }
     }
-    input {
-        width: 100%;
-        margin: 10px 0;
-        height: 30px;
-        border: none;
-        border-bottom: 1px solid rgba(0, 0, 0, .25);
+    label {
+      a {
+        color: inherit;
+      }
     }
-    textarea {
-        width: 100%;
-        height: 95px;
-        margin: 10px 0;
-        border: none;
-        border-bottom: 1px solid rgba(0, 0, 0, .25);
-        resize: none;
+  }
+  input,
+  textarea {
+    padding: 5px;
+    transition: all 0.25s ease-in-out;
+    &:focus {
+      border-radius: 4px;
+      outline: none;
+      border-color: var(--main-color);
+      box-shadow: inset 0 0 0 2px var(--main-color);
     }
-    ul {
-        margin: 10px 0;
-        padding: 0;
-        li {
-            list-style-type: none;
-        }
-        .customer_consent {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            #customer_consent {
-                width: 20px;
-                height: 20px;
-                margin: 10px 0;
-            }
-        }
-        label {
-            a {
-                color: inherit;
-            }
-        }
-    }
-    input,
-    textarea {
-        padding: 5px;
-        transition: all 0.25s ease-in-out;
-        &:focus {
-            border-radius: 4px;
-            outline: none;
-            border-color: var(--main-color);
-            box-shadow: inset 0 0 0 2px var(--main-color);
-        }
-    }
+  }
 }
 
 .thanks {
-    display: none;
-    &__overlay {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        background-color: rgba(30, 30, 30, .9);
+  display: none;
+  &__overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(30, 30, 30, 0.9);
+  }
+  &__message {
+    z-index: 100000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    min-height: 100px;
+    font-size: 20px;
+    opacity: 0.85;
+    background-color: var(--main-color);
+    color: rgb(251, 251, 251);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    span {
+      font-size: 30px;
+      font-weight: 600;
     }
-    &__message {
-        z-index: 100000;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 380px;
-        min-height: 100px;
-        font-size: 20px;
-        opacity: 0.85;
-        background-color: var(--main-color);
-        color: rgb(251, 251, 251);
-        border-radius: 10px;
-        padding: 30px;
-        text-align: center;
-        span {
-            font-size: 30px;
-            font-weight: 600;
-        }
-    }
+  }
 }
 
 .warning {
-    display: none;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    &__text {
-        margin: 0 10px;
-        p {
-            display: block;
-            text-align: center;
-            margin: 10px 0;
-        }
+  display: none;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  &__text {
+    margin: 0 10px;
+    p {
+      display: block;
+      text-align: center;
+      margin: 10px 0;
     }
+  }
 }
