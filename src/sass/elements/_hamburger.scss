@@ -1,142 +1,142 @@
 .hamburger {
-    opacity: 0;
-    visibility: hidden;
-    width: 50px;
-    height: 50px;
-    background: var(--main-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    position: fixed;
-    z-index: 100;
-    right: 30px;
-    cursor: pointer;
-    border-radius: 50%;
-    padding: 8px 0;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.24);
-    &__lines {
-        width: 22px;
-        height: 2px;
-        border-radius: 1px;
-        background: rgb(255, 255, 255);
-        transition: all 0.3s ease-in-out;
-        box-shadow: 0 0 3px 1px rgba(0, 0, 0, .3);
-        &:nth-child(2) {
-            width: 35px;
-        }
+  opacity: 0;
+  visibility: hidden;
+  width: 50px;
+  height: 50px;
+  background: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 100;
+  right: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 8px 0;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.24);
+  &__lines {
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
+    &:nth-child(2) {
+      width: 35px;
     }
+  }
 }
 
 @media (max-width: 767px) {
-    .menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease-in-out;
+    background: rgba(0, 0, 0, 0.88);
+    z-index: 2;
+    &__list {
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+    &__item {
+      width: 100%;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(50px);
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 320px;
+        border-bottom: solid 3px var(--main-color);
+        height: 3px;
+      }
+      &:last-child:after {
         visibility: hidden;
-        transition: all 0.25s ease-in-out;
-        background: rgba(0, 0, 0, .88);
-        z-index: 2;
-        &__list {
-            flex-direction: column;
-            justify-content: center;
-            height: 100%;
-        }
-        &__item {
-            width: 100%;
-            text-align: center;
-            opacity: 0;
-            transform: translateY(50px);
-            position: relative;
-            &:after {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 320px;
-                border-bottom: solid 3px var(--main-color);
-                height: 3px;
-            }
-            &:last-child:after {
-                visibility: hidden;
-                opacity: 0;
-            }
-        }
-        &__link {
-            display: block;
-            padding: 35px 0;
-            color: rgb(251, 251, 251);
-            font-size: 42px;
-            font-weight: 600;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
-            &:hover {
-                background: unset;
-                border-radius: unset;
-            }
-            &:active {
-                color: var(--main-color);
-            }
-        }
+        opacity: 0;
+      }
     }
-    .menu_active {
-        opacity: 1;
-        visibility: visible;
-        .menu__item {
-            transform: translateY(0);
-            opacity: 1;
-            @for $i from 1 through 6 {
-                $t: $i * 0.1;
-                &:nth-child(#{$i}) {
-                    transition:all 0.25s cubic-bezier(.6, 0, .8, 1.5) #{$t}s;
-                }
-            }
+    &__link {
+      display: block;
+      padding: 35px 0;
+      color: rgb(251, 251, 251);
+      font-size: 42px;
+      font-weight: 600;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      &:hover {
+        background: unset;
+        border-radius: unset;
+      }
+      &:active {
+        color: var(--main-color);
+      }
+    }
+  }
+  .menu_active {
+    opacity: 1;
+    visibility: visible;
+    .menu__item {
+      transform: translateY(0);
+      opacity: 1;
+      @for $i from 1 through 6 {
+        $t: $i * 0.1;
+        &:nth-child(#{$i}) {
+          transition: all 0.25s cubic-bezier(0.6, 0, 0.8, 1.5) #{$t}s;
         }
+      }
     }
-    .lock-scroll {
-        overflow: hidden;
-        height: 100%;
+  }
+  .lock-scroll {
+    overflow: hidden;
+    height: 100%;
+  }
+  .hamburger {
+    opacity: 1;
+    visibility: visible;
+  }
+  .hamburger_active {
+    .hamburger__lines {
+      width: 30px;
+      &:nth-child(2) {
+        transform: translateX(50px);
+        opacity: 0;
+      }
+      &:nth-child(1) {
+        transform: translateY(11px) rotate(-45deg);
+      }
+      &:nth-child(3) {
+        transform: translateY(-11px) rotate(45deg);
+      }
     }
-    .hamburger {
-        opacity: 1;
-        visibility: visible;
-    }
-    .hamburger_active {
-        .hamburger__lines {
-            width: 30px;
-            &:nth-child(2) {
-                transform: translateX(50px);
-                opacity: 0;
-            }
-            &:nth-child(1) {
-                transform: translateY(11px) rotate(-45deg);
-            }
-            &:nth-child(3) {
-                transform: translateY(-11px) rotate(45deg);
-            }
-        }
-    }
+  }
 }
 
 @media (max-width: 389px) {
-    .menu__link {
-        padding: 30px 0;
-        font-size: 30px;
-    }
-    .menu__item:after {
-        width: 270px;
-    }
+  .menu__link {
+    padding: 30px 0;
+    font-size: 30px;
+  }
+  .menu__item:after {
+    width: 270px;
+  }
 }
 
 @media (max-width: 359px) {
-    .menu__link {
-        padding: 20px 0;
-        font-size: 25px;
-    }
-    .menu__item:after {
-        width: 200px;
-    }
+  .menu__link {
+    padding: 20px 0;
+    font-size: 25px;
+  }
+  .menu__item:after {
+    width: 200px;
+  }
 }

@@ -1,1 +1,1 @@
-https://dmytrolukachyna.github.io/projects/ski/
+https://dmytrolukachyna.pp.ua/projects/pet/ski/
