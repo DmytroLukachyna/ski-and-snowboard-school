@@ -1,21 +1,22 @@
-@import "libs/normalize";
-.container {
-  max-width: 1260px;
-  margin: 0 auto;
-}
+@use "@fancyapps/fancybox/dist/jquery.fancybox.css";
+@use "slick-carousel/slick/slick.css";
+@use "@fortawesome/fontawesome-free/css/fontawesome.css";
+@use "base/fontawesome-faces";
 
-@import "base/variables";
-@import "base/fonts";
-@import "sections/mainscreen";
-@import "blocks/header";
-@import "elements/buttons";
-@import "sections/services";
-@import "base/titles";
-@import "sections/gallery";
-@import "sections/team";
-@import "sections/promo";
-@import "sections/testimonials";
-@import "blocks/footer";
-@import "elements/modal";
-@import "base/media";
-@import "elements/hamburger";
+@use "libs/normalize";
+@use "base/container";
+@use "base/variables";
+@use "base/fonts";
+@use "sections/mainscreen";
+@use "blocks/header";
+@use "elements/buttons";
+@use "sections/services";
+@use "base/titles";
+@use "sections/gallery";
+@use "sections/team";
+@use "sections/promo";
+@use "sections/testimonials";
+@use "blocks/footer";
+@use "elements/modal";
+@use "base/media";
+@use "elements/hamburger";
